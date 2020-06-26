@@ -10,4 +10,5 @@ group :test do
   gem 'cucumber-core'
   gem 'cucumber-tag_expressions'
   gem 'ffi'
+  gem 'report_builder', '~> 1.8'
 end
