@@ -1,0 +1,374 @@
+[
+  {
+    "uri": "features/tests/Login.feature",
+    "id": "login-functionality-of-application",
+    "keyword": "Feature",
+    "name": "Login functionality of Application",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "login-functionality-of-application;verification-of-wrong-login-credentials",
+        "keyword": "Scenario",
+        "name": "Verification of wrong login credentials",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.32.2/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22700
+            },
+            "status": "passed",
+            "duration": 22700
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.2/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9300
+            },
+            "status": "passed",
+            "duration": 9300
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "User have launched the parabank application",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/Login_Steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33388992300
+            },
+            "status": "passed",
+            "duration": 33388992300
+          },
+          {
+            "keyword": "And ",
+            "name": "User have entered the wrong Username and Password",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/Login_Steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 164809900
+            },
+            "status": "passed",
+            "duration": 164809900
+          },
+          {
+            "keyword": "When ",
+            "name": "User clicks Login Button",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/Login_Steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1989622600
+            },
+            "status": "passed",
+            "duration": 1989622600
+          },
+          {
+            "keyword": "Then ",
+            "name": "User gets the error message",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/Login_Steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56862700
+            },
+            "status": "passed",
+            "duration": 56862700
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24200
+            },
+            "status": "passed",
+            "duration": 24200
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.2/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 395281100
+            },
+            "status": "passed",
+            "duration": 395281100
+          }
+        ],
+        "status": "passed",
+        "duration": 35995624800
+      },
+      {
+        "id": "login-functionality-of-application;verification-of-correct-login-credentials",
+        "keyword": "Scenario",
+        "name": "Verification of correct login credentials",
+        "description": "",
+        "line": 9,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.32.2/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20900
+            },
+            "status": "passed",
+            "duration": 20900
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.2/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9300
+            },
+            "status": "passed",
+            "duration": 9300
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "User have launched the parabank application",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/Login_Steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4439772800
+            },
+            "status": "passed",
+            "duration": 4439772800
+          },
+          {
+            "keyword": "And ",
+            "name": "User have entered the correct Username and Password",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/Login_Steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155372300
+            },
+            "status": "passed",
+            "duration": 155372300
+          },
+          {
+            "keyword": "When ",
+            "name": "User clicks Login Button",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/Login_Steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5879953100
+            },
+            "status": "passed",
+            "duration": 5879953100
+          },
+          {
+            "keyword": "Then ",
+            "name": "User gets the account overview page",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/Login_Steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14867800
+            },
+            "status": "passed",
+            "duration": 14867800
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20600
+            },
+            "status": "passed",
+            "duration": 20600
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.2/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 375786500
+            },
+            "status": "passed",
+            "duration": 375786500
+          }
+        ],
+        "status": "passed",
+        "duration": 10865803300
+      }
+    ],
+    "status": "working",
+    "duration": 46861428100
+  },
+  {
+    "uri": "features/tests/OpenAccount.feature",
+    "id": "open-new-account-page",
+    "keyword": "Feature",
+    "name": "Open new Account Page",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "open-new-account-page;verify-user-is-able-to-get-open-account-page",
+        "keyword": "Scenario",
+        "name": "Verify User is able to get open account page",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.32.2/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18200
+            },
+            "status": "passed",
+            "duration": 18200
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.2/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000
+            },
+            "status": "passed",
+            "duration": 9000
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "User have launched the parabank application",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/Login_Steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4681344300
+            },
+            "status": "passed",
+            "duration": 4681344300
+          },
+          {
+            "keyword": "And ",
+            "name": "User have logged in with the correct Username and Password",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/OpenAccount_Steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1401122000
+            },
+            "status": "passed",
+            "duration": 1401122000
+          },
+          {
+            "keyword": "When ",
+            "name": "User clicks Open new Account Page",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/OpenAccount_Steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 630084200
+            },
+            "status": "passed",
+            "duration": 630084200
+          },
+          {
+            "keyword": "Then ",
+            "name": "User gets the Open new Account Page",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/OpenAccount_Steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10867800
+            },
+            "status": "passed",
+            "duration": 10867800
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37000
+            },
+            "status": "passed",
+            "duration": 37000
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.2/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 423118400
+            },
+            "status": "passed",
+            "duration": 423118400
+          }
+        ],
+        "status": "passed",
+        "duration": 7146600900
+      }
+    ],
+    "status": "working",
+    "duration": 7146600900
+  }
+]

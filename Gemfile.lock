@@ -87,7 +87,7 @@ DEPENDENCIES
   cucumber-core
   cucumber-tag_expressions
   ffi
-  report_builder (~> 1.8)
+  report_builder
   rspec
   selenium-webdriver
   sinatra

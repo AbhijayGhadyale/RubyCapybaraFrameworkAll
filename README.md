@@ -45,6 +45,10 @@ gem install bundler
 gem install bundle
 
 
+bundle exec cucumber --format html --out html-report/testReport.html
+
+bundle exec cucumber --format json --out json-report/testReport.json
+
 ```
 
 This will install Ruby, and the DevKit into `c:\tools` using Chocolatey. Ruby should also be accessible from the PATH. you can verify this via the following command:
