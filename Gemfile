@@ -11,4 +11,5 @@ group :test do
   gem 'cucumber-tag_expressions'
   gem 'ffi'
   gem 'report_builder'
+  gem 'capybara-screenshot'
 end
