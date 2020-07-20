@@ -1,8 +1,5 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem "sinatra"
-
-group :test do
   gem "rspec"
   gem "capybara"
   gem 'selenium-webdriver'
@@ -10,6 +7,10 @@ group :test do
   gem 'cucumber-core'
   gem 'cucumber-tag_expressions'
   gem 'ffi'
-  gem 'report_builder'
   gem 'capybara-screenshot'
-end
+  gem 'report_builder', '~> 1.8'
+  gem 'webdrivers'
+  gem 'spreadsheet', '~> 1.1', '>= 1.1.4'
+  gem 'roo'
+  gem 'rubyXL', '~> 3.3', '>= 3.3.21'
+  gem 'logger'

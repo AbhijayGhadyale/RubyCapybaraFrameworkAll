@@ -1,9 +1,9 @@
 When(/^User clicks Open new Account Page$/) do
-  OpenAccountPageObjects.click_open_Account_Page
+  OpenAccountPageObjects.click_open_account_page
 end
 
 Then(/^User gets the Open new Account Page$/) do
-  OpenAccountPageObjects.verify_Open_New_Account_Page_Displayed
+  OpenAccountPageObjects.verify_account_page_displayed
 end
 
 And(/^User have logged in with the correct Username and Password$/) do

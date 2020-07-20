@@ -1,3 +1,6 @@
+require './framework/base_page'
+include UiTest
+
 class LoginPageObjects
   class << self
 
@@ -7,20 +10,24 @@ class LoginPageObjects
     LoginErrorMessageCSS='p[class="error"]'
 
     def navigate_to_application
-      visit ("/parabank/index.htm")
+      #visit ("/parabank/index.htm")
+      CommonNavigationControls.navigate_to_url'/parabank/index.htm'
       Capybara.page.driver.browser.manage.window.maximize
     end
 
     def enter_Username usernameText
-      find(:css, UsernameCSS).set(usernameText)
+      #find(:css, UsernameCSS).set(usernameText)
+      CommonTextBoxControls.enter_text(UsernameCSS,'css',usernameText)
     end
 
     def enter_Password passwordText
-      find(:css,PasswordCSS).set(passwordText)
+      #find(:css,PasswordCSS).set(passwordText)
+      CommonTextBoxControls.enter_text(PasswordCSS,'css',passwordText)
     end
 
     def click_login
-      find(:css, LoginButtonCSS).click
+      #find(:css, LoginButtonCSS).click
+      CommonClickControls.click_on_button LoginButtonCSS,'css'
     end
 
     def verify_login_error_message messageText

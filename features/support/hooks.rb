@@ -1,3 +1,9 @@
+require 'fileutils'
+Before do
+  FileUtils.rm_rf('./FailedSnapshots')
+end
+
+
 at_exit do
   ReportBuilder.configure do |config|
     config.input_path = 'json-report/testReport.json'
@@ -10,4 +16,5 @@ at_exit do
   end
 
   ReportBuilder.build_report
+
 end
