@@ -46,3 +46,36 @@ I, [2020-07-22T17:30:39.539488 #27880]  INFO -- : demo entered in input[name='us
 I, [2020-07-22T17:30:39.617488 #27880]  INFO -- : demo entered in input[name='password']
 I, [2020-07-22T17:30:41.234393 #27880]  INFO -- : input[value="Log In"] is clicked
 I, [2020-07-22T17:30:41.285383 #27880]  INFO -- : 'Error!' text is available for h1[class="title"]
+I, [2020-07-22T20:03:23.822794 #25284]  INFO -- : navigating to url is successfull 
+I, [2020-07-22T20:03:24.030794 #25284]  INFO -- : john entered in input[name='username']
+I, [2020-07-22T20:03:24.109795 #25284]  INFO -- : demo entered in input[name='password']
+I, [2020-07-22T20:03:29.112797 #25284]  INFO -- : input[value="Log In"] is clicked
+I, [2020-07-22T20:03:29.124824 #25284]  INFO -- : verified as page is having ParaBank | Accounts Overview as title 
+I, [2020-07-22T20:03:31.147801 #25284]  INFO -- : a[href="/parabank/updateprofile.htm"] is clicked
+I, [2020-07-22T20:03:31.159794 #25284]  INFO -- : verified as page is having ParaBank | Update Profile as title 
+I, [2020-07-22T20:03:31.277794 #25284]  INFO -- : 310-447-4121 entered in input[name='customer.phoneNumber']
+I, [2020-07-22T20:03:31.355794 #25284]  INFO -- : CA entered in input[name='customer.address.city']
+I, [2020-07-22T20:03:31.422792 #25284]  INFO -- : input[value="Update Profile"] is clicked
+E, [2020-07-22T20:03:36.436792 #25284] ERROR -- : 'Your updated address and phone number have been added to the system. ' text is not available for p: Unable to find css "p"
+I, [2020-07-22T20:21:14.719794 #14348]  INFO -- : navigating to url is successfull 
+I, [2020-07-22T20:21:14.836795 #14348]  INFO -- : john entered in input[name='username']
+I, [2020-07-22T20:21:14.936796 #14348]  INFO -- : demo entered in input[name='password']
+I, [2020-07-22T20:21:16.864792 #14348]  INFO -- : input[value="Log In"] is clicked
+I, [2020-07-22T20:21:16.875794 #14348]  INFO -- : verified as page is having ParaBank | Accounts Overview as title 
+I, [2020-07-22T20:21:18.079795 #14348]  INFO -- : a[href="/parabank/updateprofile.htm"] is clicked
+I, [2020-07-22T20:21:18.091794 #14348]  INFO -- : verified as page is having ParaBank | Update Profile as title 
+I, [2020-07-22T20:21:18.182794 #14348]  INFO -- : 310-447-4122 entered in input[name='customer.phoneNumber']
+I, [2020-07-22T20:21:18.260795 #14348]  INFO -- : AC entered in input[name='customer.address.city']
+I, [2020-07-22T20:21:18.331794 #14348]  INFO -- : input[value="Update Profile"] is clicked
+E, [2020-07-22T20:21:23.347794 #14348] ERROR -- : 'Your updated address and phone number have been added to the system. ' text is not available for p: Unable to find css "p"
+I, [2020-07-22T20:22:12.763794 #24740]  INFO -- : navigating to url is successfull 
+I, [2020-07-22T20:22:12.879795 #24740]  INFO -- : john entered in input[name='username']
+I, [2020-07-22T20:22:12.991794 #24740]  INFO -- : demo entered in input[name='password']
+I, [2020-07-22T20:22:18.326796 #24740]  INFO -- : input[value="Log In"] is clicked
+I, [2020-07-22T20:22:18.341796 #24740]  INFO -- : verified as page is having ParaBank | Accounts Overview as title 
+I, [2020-07-22T20:22:19.930797 #24740]  INFO -- : a[href="/parabank/updateprofile.htm"] is clicked
+I, [2020-07-22T20:22:19.942793 #24740]  INFO -- : verified as page is having ParaBank | Update Profile as title 
+I, [2020-07-22T20:22:35.534794 #24740]  INFO -- : 310-447-4122 entered in input[name='customer.phoneNumber']
+I, [2020-07-22T20:22:47.238796 #24740]  INFO -- : AC entered in input[name='customer.address.city']
+I, [2020-07-22T20:23:08.100796 #24740]  INFO -- : input[value="Update Profile"] is clicked
+E, [2020-07-22T20:23:20.198794 #24740] ERROR -- : 'Your updated address and phone number have been added to the system. ' text is not available for p: Unable to find visible css "p" with text "Your updated address and phone number have been added to the system. "
