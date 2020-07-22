@@ -31,6 +31,17 @@ module CommonExpectationControls
         $LOG.error "error in verifying #{content_string} is available on page: #{e}"
       end
     end
+
+
+    def expect_page_to_have_title(title_string)
+      begin
+        expect(page).to have_title title_string
+        $LOG.info "verified as page is having #{title_string} as title "
+      rescue Exception => e
+        $LOG.error "verified as page is not having #{title_string} as title : #{e}"
+      end
+    end
+
   end
 end
 

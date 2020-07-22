@@ -15,6 +15,7 @@ require './features/support/automation_context'
 include AutomationContext
 
 begin
+  FileUtils.rm_rf('./FailedSnapshots')
   config_file = ENV['TEST_CONFIG'] || 'config'
   config_path = "/conf/#{config_file}.yaml"
   all_config_filepath = File.expand_path(File.dirname(File.basename(Dir.getwd))) + config_path

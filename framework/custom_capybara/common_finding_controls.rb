@@ -19,6 +19,28 @@ module CommonFindingControls
       end
     end
 
+
+    def verify_locator_text_available(locator, locator_type, messageText)
+      begin
+        case locator_type
+        when 'css'
+          find(:css,locator , :text => messageText)
+          $LOG.info "'#{messageText}' text is available for #{locator}"
+        when 'xpath'
+          find(:xpath,locator , :text => messageText)
+          $LOG.info "'#{messageText}' text is available for #{locator}"
+        when ('name' || 'id' || 'link_text')
+          find(locator , :text => messageText)
+          $LOG.info "'#{messageText}' text is available for #{locator}"
+        else
+          return -1
+        end
+      rescue Exception => e
+        $LOG.error "'#{messageText}' text is not available for #{locator}: #{e}"
+      end
+    end
+
+
   end
 end
 =begin

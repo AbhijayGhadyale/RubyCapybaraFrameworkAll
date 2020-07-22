@@ -5,7 +5,7 @@ include UiTest
 class OpenAccountPageObjects
   class << self
     OpenNewAccountLinkXpath = 'a[href="/parabank/openaccount.htm"]'
-    PageTitleText = 'ParaBank | Open Account'
+    OpenAccountPageTitleText = 'ParaBank | Open Account'
 
     def click_open_account_page
       find(:css, OpenNewAccountLinkXpath).click
@@ -13,7 +13,7 @@ class OpenAccountPageObjects
 
 
     def verify_account_page_displayed
-      expect(page).to have_title PageTitleText
+      expect(page).to have_title OpenAccountPageTitleText
     end
   end
 end

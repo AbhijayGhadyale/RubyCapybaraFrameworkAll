@@ -1,13 +1,6 @@
-# Logfile created on 2020-07-20 10:55:15 +0530 by logger.rb/v1.4.2
-I, [2020-07-20T10:55:51.794082 #10172]  INFO -- : navigating to url is successfull 
-I, [2020-07-20T10:55:51.909110 #10172]  INFO -- : admin entered in input[name='username']
-I, [2020-07-20T10:55:51.998155 #10172]  INFO -- : admin entered in input[name='password']
-I, [2020-07-20T10:55:54.417024 #10172]  INFO -- : input[value="Log In"] is clicked
-I, [2020-07-20T10:55:59.359767 #10172]  INFO -- : navigating to url is successfull 
-I, [2020-07-20T10:55:59.458866 #10172]  INFO -- : john entered in input[name='username']
-I, [2020-07-20T10:55:59.547768 #10172]  INFO -- : demo entered in input[name='password']
-I, [2020-07-20T10:56:04.637940 #10172]  INFO -- : input[value="Log In"] is clicked
-I, [2020-07-20T10:56:09.193797 #10172]  INFO -- : navigating to url is successfull 
-I, [2020-07-20T10:56:09.293940 #10172]  INFO -- : demo entered in input[name='username']
-I, [2020-07-20T10:56:09.383027 #10172]  INFO -- : demo entered in input[name='password']
-I, [2020-07-20T10:56:10.318002 #10172]  INFO -- : input[value="Log In"] is clicked
+# Logfile created on 2020-07-22 16:09:21 +0530 by logger.rb/v1.4.2
+I, [2020-07-22T16:09:54.596083 #8116]  INFO -- : navigating to url is successfull 
+I, [2020-07-22T16:09:54.742071 #8116]  INFO -- : admin entered in input[name='username']
+I, [2020-07-22T16:09:54.821010 #8116]  INFO -- : admin entered in input[name='password']
+I, [2020-07-22T16:09:57.363333 #8116]  INFO -- : input[value="Log In"] is clicked
+I, [2020-07-22T16:09:57.421394 #8116]  INFO -- : 'The username and password could not be verified.' text is available for p[class="error"]

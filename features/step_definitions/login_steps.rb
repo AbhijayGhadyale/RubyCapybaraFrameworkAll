@@ -1,11 +1,26 @@
+require './utility/excel_operations'
+require 'rubyXL'
+
 Given(/^User have launched the parabank application$/) do
   LoginPageObjects.navigate_to_application
 end
 
 And(/^User have entered the wrong Username and Password$/) do
-   LoginPageObjects.enter_Username "admin"
-   LoginPageObjects.enter_Password "admin"
-end
+  ExcelOperations.create_excel_file
+  ExcelOperations.add_sheet'Login'
+  ExcelOperations.get_sheet 'Login'
+  ExcelOperations.set_cell 1,0,'admin'
+  ExcelOperations.set_cell 1,1,'admin'
+  ExcelOperations.save_excel './testData/excelTest.xlsx'
+  ExcelOperations.parse_excel'./testData/excelTest.xlsx'
+  ExcelOperations.get_sheet'Login'
+  uname=ExcelOperations.get_cell 1,0
+  passwd=ExcelOperations.get_cell 1,1
+  LoginPageObjects.enter_Username uname
+  LoginPageObjects.enter_Password passwd
+  ExcelOperations.set_cell 1,2,'Pass'
+  ExcelOperations.save_excel './testData/excelTest.xlsx'
+ end
 
 When(/^User clicks Login Button$/) do
   LoginPageObjects.click_login

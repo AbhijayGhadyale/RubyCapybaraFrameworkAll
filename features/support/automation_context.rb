@@ -5,11 +5,9 @@ require 'selenium-webdriver'
 require 'yaml'
 require 'capybara-screenshot'
 require 'rspec'
-include Capybara::DSL
 require 'capybara/dsl'
 require 'rspec/core'
 require 'rspec/expectations'
-include RSpec::Matchers
 require 'logger'
 require 'capybara-screenshot/cucumber'
 
@@ -119,7 +117,7 @@ module AutomationContext
     def bootstrap_ie
       Capybara.register_driver :remote_browser do |app|
         client = Selenium::WebDriver::Remote::Http::Default.new
-        client.read_timeout = 100
+        client.read_timeout = 60
 
         capabilities = Selenium::WebDriver::Remote::Capabilities.internet_explorer
         capabilities['ignoreProtectedModeSettings'] = true,
