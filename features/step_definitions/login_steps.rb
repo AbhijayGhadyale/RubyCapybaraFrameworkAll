@@ -37,3 +37,12 @@ end
 Then(/^User gets the account overview page$/) do
   LoginPageObjects.verify_title_of_page "ParaBank | Accounts Overview"
 end
+
+And(/^User have entered the (.*) and (.*)$/) do |username,password|
+  LoginPageObjects.enter_Username username
+  LoginPageObjects.enter_Password password
+end
+
+Then(/^User gets the (.*) text after login$/) do |page_text|
+  LoginPageObjects.verify_page_contains_text page_text
+end

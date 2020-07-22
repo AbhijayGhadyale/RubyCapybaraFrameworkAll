@@ -39,5 +39,10 @@ class LoginPageObjects
       #expect(page).to have_title pageTitleText
       CommonExpectationControls.expect_page_to_have_title pageTitleText
     end
+
+
+    def verify_page_contains_text text_to_verify
+      CommonFindingControls.verify_locator_text_available 'h1[class="title"]','css',text_to_verify
+    end
   end
 end

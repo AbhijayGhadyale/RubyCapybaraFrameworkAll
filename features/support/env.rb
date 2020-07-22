@@ -27,8 +27,8 @@ rescue Exception => e
   Process.exit(0)
 end
 
-File.delete("log_file.log")
-$LOG = Logger.new('log_file.log', 'monthly')
+#File.delete("log_file.log")
+$LOG = Logger.new('log_file.log', 'daily')
 # $LOG = Logger.new STDOUT
 # $LOG = Logger.new STDERR
 # $LOG.datetime_format = '%Y-%m-%d %H:%M:%S%z '
