@@ -14,10 +14,9 @@ And(/^User have entered the wrong Username and Password$/) do
   ExcelOperations.save_excel './testData/excelTest.xlsx'
   ExcelOperations.parse_excel'./testData/excelTest.xlsx'
   ExcelOperations.get_sheet'Login'
-  uname=ExcelOperations.get_cell 1,0
-  passwd=ExcelOperations.get_cell 1,1
-  LoginPageObjects.enter_Username uname
-  LoginPageObjects.enter_Password passwd
+
+  LoginPageObjects.enter_Username ExcelOperations.get_cell 1,0
+  LoginPageObjects.enter_Password ExcelOperations.get_cell 1,1
   ExcelOperations.set_cell 1,2,'Pass'
   ExcelOperations.save_excel './testData/excelTest.xlsx'
  end

@@ -1,6 +1,18 @@
-# Logfile created on 2020-07-22 16:09:21 +0530 by logger.rb/v1.4.2
-I, [2020-07-22T16:09:54.596083 #8116]  INFO -- : navigating to url is successfull 
-I, [2020-07-22T16:09:54.742071 #8116]  INFO -- : admin entered in input[name='username']
-I, [2020-07-22T16:09:54.821010 #8116]  INFO -- : admin entered in input[name='password']
-I, [2020-07-22T16:09:57.363333 #8116]  INFO -- : input[value="Log In"] is clicked
-I, [2020-07-22T16:09:57.421394 #8116]  INFO -- : 'The username and password could not be verified.' text is available for p[class="error"]
+# Logfile created on 2020-07-22 16:45:02 +0530 by logger.rb/v1.4.2
+I, [2020-07-22T16:45:36.449485 #2668]  INFO -- : navigating to url is successfull 
+I, [2020-07-22T16:45:36.468407 #2668]  INFO -- : Excel is created in buffer
+I, [2020-07-22T16:45:36.468407 #2668]  INFO -- : Loginis added in excel in buffer
+I, [2020-07-22T16:45:36.469385 #2668]  INFO -- : Loginis selected in excel
+I, [2020-07-22T16:45:36.469385 #2668]  INFO -- : adminis entered in selected sheet of excel
+I, [2020-07-22T16:45:36.469385 #2668]  INFO -- : adminis entered in selected sheet of excel
+I, [2020-07-22T16:45:36.655962 #2668]  INFO -- : Excel in buffer saved as ./testData/excelTest.xlsx
+I, [2020-07-22T16:45:36.675961 #2668]  INFO -- : ./testData/excelTest.xlsx excel is opened 
+I, [2020-07-22T16:45:36.676930 #2668]  INFO -- : Loginis selected in excel
+I, [2020-07-22T16:45:36.676930 #2668]  INFO -- :  admin is retrieved from cell 1 ,0
+I, [2020-07-22T16:45:36.767130 #2668]  INFO -- : true entered in input[name='username']
+I, [2020-07-22T16:45:36.767130 #2668]  INFO -- :  admin is retrieved from cell 1 ,1
+I, [2020-07-22T16:45:36.845113 #2668]  INFO -- : true entered in input[name='password']
+I, [2020-07-22T16:45:36.845113 #2668]  INFO -- : Passis entered in selected sheet of excel
+I, [2020-07-22T16:45:36.856928 #2668]  INFO -- : Excel in buffer saved as ./testData/excelTest.xlsx
+I, [2020-07-22T16:45:38.769588 #2668]  INFO -- : input[value="Log In"] is clicked
+I, [2020-07-22T16:45:38.828619 #2668]  INFO -- : 'The username and password could not be verified.' text is available for p[class="error"]

@@ -1,4 +1,5 @@
 require 'rubyXL'
+
 class ExcelOperations
   class << self
 
@@ -6,36 +7,68 @@ class ExcelOperations
     @sheet
 
     def create_excel_file
-      @data_workbook = RubyXL::Workbook.new
+      begin
+        @data_workbook = RubyXL::Workbook.new
+        $LOG.info "Excel is created in buffer"
+      rescue Exception => e
+        $LOG.error "Excel is not created in buffer: #{e}"
+      end
     end
 
     def add_sheet(sheet_name)
-      @data_workbook.add_worksheet(sheet_name)
+      begin
+        @data_workbook.add_worksheet(sheet_name)
+        $LOG.info "#{sheet_name} is added in excel in buffer"
+      rescue Exception => e
+        $LOG.error "#{sheet_name} is not added in excel in buffer: #{e}"
+      end
     end
 
     def get_sheet(sheet_name)
-      @sheet = @data_workbook[sheet_name]
+      begin
+        @sheet = @data_workbook[sheet_name]
+        $LOG.info "#{sheet_name} is selected in excel"
+      rescue Exception => e
+        $LOG.error "#{sheet_name} is not selected in excel: #{e}"
+      end
     end
 
-    def set_cell(row_num,col_num,data_text)
-      @sheet.insert_cell(row_num,col_num,data_text)
-      puts "write performed"
+    def set_cell(row_num, col_num, data_text)
+      begin
+        @sheet.insert_cell(row_num, col_num, data_text)
+        $LOG.info "#{data_text} is entered in selected sheet of excel"
+      rescue Exception => e
+        $LOG.error "#{data_text} is not entered in selected sheet of excel: #{e}"
+      end
     end
 
     def save_excel(file_with_path)
-      @data_workbook.write(file_with_path)
-      puts "save performed"
-
+      begin
+        @data_workbook.write(file_with_path)
+        $LOG.info "Excel in buffer saved as #{file_with_path}"
+      rescue Exception => e
+        $LOG.error "Excel in buffer not saved as #{file_with_path}: #{e}"
+      end
     end
 
 
     def parse_excel(file_path)
-      @data_workbook = RubyXL::Parser.parse(file_path)
+      begin
+        @data_workbook = RubyXL::Parser.parse(file_path)
+        $LOG.info "#{file_path}  excel is opened "
+      rescue Exception => e
+        $LOG.error "#{file_path}  excel is not opened: #{e}"
+      end
     end
 
     def get_cell(row_num, col_num)
-      @sheet[row_num][col_num].value
-      #@sheet.sheet_data[1][0].value
+      begin
+        @sheet[row_num][col_num].value
+        #@sheet.sheet_data[1][0].value
+        $LOG.info " #{@sheet[row_num][col_num].value}  is retrieved from cell #{row_num} ,#{col_num}"
+      rescue Exception => e
+        $LOG.error "#{@sheet[row_num][col_num].value}  is not retrieved from cell #{row_num} ,#{col_num}: #{e}"
+      end
     end
 
   end
