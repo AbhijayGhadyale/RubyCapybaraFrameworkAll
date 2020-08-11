@@ -29,6 +29,7 @@ module CommonExpectationControls
         $LOG.info "verified as #{content_string} is available in page "
       rescue Exception => e
         $LOG.error "error in verifying #{content_string} is available on page: #{e}"
+        raise
       end
     end
 
@@ -39,6 +40,7 @@ module CommonExpectationControls
         $LOG.info "verified as page is having #{title_string} as title "
       rescue Exception => e
         $LOG.error "verified as page is not having #{title_string} as title : #{e}"
+        raise
       end
     end
 

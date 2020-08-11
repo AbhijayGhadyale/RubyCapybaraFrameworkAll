@@ -8,7 +8,7 @@ class UpdateContactInfoObjects
     CityCSS="input[name='customer.address.city']"
     PhoneNumberCSS="input[name='customer.phoneNumber']"
     UpdateProfileButtonCSS='input[value="Update Profile"]'
-    UpdateInfoMessageCSS='p'
+    UpdateInfoMessageCSS='h1[class="title"]'
 
     def click_update_info_link
       CommonClickControls.click_on_link UpdateContactInfoLinkCSS,'css'

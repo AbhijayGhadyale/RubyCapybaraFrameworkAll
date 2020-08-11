@@ -33,7 +33,7 @@ class LoginPageObjects
     def verify_login_error_message messageText
       #find(:css,LoginErrorMessageCSS , :text => messageText)
       CommonFindingControls.verify_locator_text_available LoginErrorMessageCSS,'css',messageText
-    end
+      end
 
     def verify_title_of_page pageTitleText
       #expect(page).to have_title pageTitleText

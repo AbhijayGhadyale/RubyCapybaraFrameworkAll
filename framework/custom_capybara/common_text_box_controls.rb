@@ -19,6 +19,7 @@ module CommonTextBoxControls
         end
       rescue Exception => e
         $LOG.error "error in entering #{text_string} in #{locator}: #{e}"
+        raise
       end
     end
 
@@ -39,6 +40,7 @@ module CommonTextBoxControls
         end
       rescue Exception => e
         $LOG.error "clear is not successful for #{locator}: #{e}"
+        raise
       end
     end
 

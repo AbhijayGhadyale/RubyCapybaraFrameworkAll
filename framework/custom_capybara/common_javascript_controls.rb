@@ -8,6 +8,7 @@ module CommonRadioButtonControls
         $LOG.info "#{js_script} code is executed"
       rescue Exception => e
         $LOG.error "#{js_script}code is not executed: #{e}"
+        raise
       end
     end
 

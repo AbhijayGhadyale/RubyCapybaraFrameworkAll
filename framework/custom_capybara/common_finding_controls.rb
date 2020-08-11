@@ -16,6 +16,7 @@ module CommonFindingControls
         end
       rescue Exception => e
         $LOG.error "value is not retrived for #{locator}: #{e}"
+        raise
       end
     end
 
@@ -37,6 +38,7 @@ module CommonFindingControls
         end
       rescue Exception => e
         $LOG.error "'#{messageText}' text is not available for #{locator}: #{e}"
+        raise
       end
     end
 

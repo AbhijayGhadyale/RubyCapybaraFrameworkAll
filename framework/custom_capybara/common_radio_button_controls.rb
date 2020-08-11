@@ -19,6 +19,7 @@ module CommonRadioButtonControls
         end
       rescue Exception => e
         $LOG.error "error in selecting #{locator}: #{e}"
+        raise
       end
     end
   end

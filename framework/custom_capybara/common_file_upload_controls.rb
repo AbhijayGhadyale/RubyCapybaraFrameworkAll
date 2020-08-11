@@ -19,6 +19,7 @@ module CommonFileUploadControls
         end
       rescue Exception => e
         $LOG.error "error in uploading file for #{locator}: #{e}"
+        raise
       end
     end
   end

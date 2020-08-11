@@ -14,7 +14,7 @@ Feature:Login functionality of Application
 
   Scenario Outline: Verification of correct login credentials for multiple username and passwords
     Given User have launched the parabank application
-    And User have entered the <username> and <password>
+    And User have entered the <username> username and <password> password
     When User clicks Login Button
     Then User gets the <page_text> text after login
 

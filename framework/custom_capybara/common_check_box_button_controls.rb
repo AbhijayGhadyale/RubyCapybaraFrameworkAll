@@ -19,6 +19,7 @@ module CommonCheckBoxControls
         end
       rescue Exception => e
         $LOG.error "error in selecting #{locator} checkbox: #{e}"
+        raise
       end
     end
 
@@ -28,6 +29,7 @@ module CommonCheckBoxControls
         $LOG.info "checkbox with value #{checkbox_value} is selected"
       rescue Exception => e
         $LOG.error "error in selecting checkbox with value #{checkbox_value} : #{e}"
+        raise
       end
     end
 
@@ -37,6 +39,7 @@ module CommonCheckBoxControls
         $LOG.info "checkbox with value #{checkbox_value} is unselected"
       rescue Exception => e
         $LOG.error "error in unselecting checkbox with value #{checkbox_value} : #{e}"
+        raise
       end
     end
 

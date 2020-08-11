@@ -19,6 +19,7 @@ module CommonQueryingControls
         end
       rescue Exception => e
         $LOG.error "error in finding #{locator} in page: #{e}"
+        raise
       end
     end
 
@@ -28,6 +29,7 @@ module CommonQueryingControls
         $LOG.info "#{content_string} is present in page"
       rescue Exception => e
         $LOG.error "error in finding #{content_string} in page: #{e}"
+        raise
       end
     end
 

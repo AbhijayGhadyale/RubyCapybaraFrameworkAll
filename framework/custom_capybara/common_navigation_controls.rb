@@ -9,6 +9,7 @@ module CommonNavigationControls
         $LOG.info "navigating to url is successfull "
       rescue Exception => e
         $LOG.error "error in navigating to #{urlpathString}: #{e}"
+        raise
       end
     end
 

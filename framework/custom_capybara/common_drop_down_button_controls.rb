@@ -19,6 +19,7 @@ module CommonDropdownControls
         end
       rescue Exception => e
         $LOG.error "error in selecting #{dropdown_text} from #{locator}: #{e}"
+        raise
       end
     end
 
@@ -28,6 +29,7 @@ module CommonDropdownControls
         $LOG.info "#{dropdown_text} is selected from #{_dropdown_value}"
       rescue Exception => e
         $LOG.error "error in selecting #{dropdown_text} from #{_dropdown_value}: #{e}"
+        raise
       end
     end
 

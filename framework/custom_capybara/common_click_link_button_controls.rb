@@ -19,6 +19,7 @@ module CommonClickControls
         end
       rescue Exception => e
         $LOG.error "error in clicking #{locator}: #{e}"
+        raise
       end
     end
 
@@ -39,6 +40,7 @@ module CommonClickControls
         end
       rescue Exception => e
         $LOG.error "error in clicking #{locator}: #{e}"
+        raise
       end
     end
 
@@ -48,6 +50,7 @@ module CommonClickControls
         $LOG.info "#{button_value} is clicked"
       rescue Exception => e
         $LOG.error "error in clicking #{button_value}: #{e}"
+        raise
       end
     end
 

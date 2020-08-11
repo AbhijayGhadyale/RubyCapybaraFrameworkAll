@@ -40,6 +40,7 @@ module CommonModalsControls
         $LOG.info "alert is dismissed after clicked#{link_text}"
       rescue Exception => e
         $LOG.error "error in dismissing alert after clicked#{link_text}: #{e}"
+        raise
       end
     end
 

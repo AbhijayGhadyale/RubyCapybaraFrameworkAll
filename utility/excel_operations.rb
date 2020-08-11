@@ -12,6 +12,7 @@ class ExcelOperations
         $LOG.info "Excel is created in buffer"
       rescue Exception => e
         $LOG.error "Excel is not created in buffer: #{e}"
+        raise
       end
     end
 
@@ -21,6 +22,7 @@ class ExcelOperations
         $LOG.info "#{sheet_name} is added in excel in buffer"
       rescue Exception => e
         $LOG.error "#{sheet_name} is not added in excel in buffer: #{e}"
+        raise
       end
     end
 
@@ -30,6 +32,7 @@ class ExcelOperations
         $LOG.info "#{sheet_name} is selected in excel"
       rescue Exception => e
         $LOG.error "#{sheet_name} is not selected in excel: #{e}"
+        raise
       end
     end
 
@@ -39,6 +42,7 @@ class ExcelOperations
         $LOG.info "#{data_text} is entered in selected sheet of excel"
       rescue Exception => e
         $LOG.error "#{data_text} is not entered in selected sheet of excel: #{e}"
+        raise
       end
     end
 
@@ -48,6 +52,7 @@ class ExcelOperations
         $LOG.info "Excel in buffer saved as #{file_with_path}"
       rescue Exception => e
         $LOG.error "Excel in buffer not saved as #{file_with_path}: #{e}"
+        raise
       end
     end
 
@@ -58,16 +63,18 @@ class ExcelOperations
         $LOG.info "#{file_path}  excel is opened "
       rescue Exception => e
         $LOG.error "#{file_path}  excel is not opened: #{e}"
+        raise
       end
     end
 
     def get_cell(row_num, col_num)
       begin
-        @sheet[row_num][col_num].value
-        #@sheet.sheet_data[1][0].value
-        $LOG.info " #{@sheet[row_num][col_num].value}  is retrieved from cell #{row_num} ,#{col_num}"
+        return @sheet.sheet_data[row_num][col_num].value
+        #@sheet[row_num][col_num].value
+        #@sheet.sheet_data[row_num][col_num].value
       rescue Exception => e
         $LOG.error "#{@sheet[row_num][col_num].value}  is not retrieved from cell #{row_num} ,#{col_num}: #{e}"
+        raise
       end
     end
 
