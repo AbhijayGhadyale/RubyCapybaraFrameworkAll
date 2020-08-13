@@ -20,5 +20,18 @@ at_exit do
   end
 
   ReportBuilder.build_report
+  $LOG.info "############Test Cases Execution Completed ################"
   $LOG.close
+
+  # below code is for creating log file for current executions
+  begin
+  input = File.open(@LogFile)
+  data_to_copy = input.read # gather the data using read() method
+
+  output = File.open("./logs/current-log/current_log_file.log", 'w')
+  output.write(data_to_copy)  # write up the data using write() method
+
+  output.close
+  input.close
+  end
 end

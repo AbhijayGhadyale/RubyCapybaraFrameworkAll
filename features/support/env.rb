@@ -14,7 +14,11 @@ require 'logger'
 require './features/support/automation_context'
 include AutomationContext
 
-$LOG = Logger.new('log_file.log', 'daily')
+
+#time=Time.now.strftime("_%d_%m_%Y_%H_%M_%S_%L")
+@LogFile="./logs/previous-logs/log_file#{Time.now.strftime("_%d_%m_%Y_%H_%M_%S_%L")}.log"
+$LOG=Logger.new(@LogFile)
+
 begin
   FileUtils.rm_rf('./FailedSnapshots')
   config_file = ENV['TEST_CONFIG'] || 'config'
@@ -22,7 +26,7 @@ begin
   all_config_filepath = File.expand_path(File.dirname(File.basename(Dir.getwd))) + config_path
 
   AutomationContext.startup all_config_filepath
-  $LOG.info"############Test Case Execution Started ################"
+  $LOG.info"############Test Cases Execution Started ################"
 
 rescue Exception => e
   puts e.message

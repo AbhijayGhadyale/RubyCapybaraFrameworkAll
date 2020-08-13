@@ -82,7 +82,7 @@ class ExcelOperations
 end
 
 
-# to read excel file flow of methods
+# to read from excel file flow of methods
 # 1) parse_excel(parameter is file name with path)
 # 2) get_cell(parameters are cell row number and column number)
 
@@ -92,6 +92,6 @@ end
 # 3) set_cell(parameters are cell row number,column number and data to enter in cell)
 # 4) save_excel(parameter is file name with path ) This will save excel with given name in given path with sheet name and data
 
-#to write excel file flow of methods
+#to write to excel file flow of methods
 # 1) parse_excel(parameter is file name with path)
 # 2) set_cell(parameters are cell row number,column number and data to enter in cell)
