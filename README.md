@@ -1,6 +1,7 @@
 # RubyCapybaraBDDFramework
 # Initial setup for Ruby Automation
 
+
 ## Install Ruby and the Dev Kit
 •	Ruby Dev Kit should be installed on the system 
 
@@ -10,35 +11,35 @@
 <https://rubyinstaller.org/downloads/>
 
 -- OR -- 
- 
+
    Go to Powershell in admin mode in Windows machine and use below commands to install ruby and ruby dev kit 
    
-   $ choco install ruby
+-  $ choco install ruby
    
-   $ choco install ruby2.devkit
+-  $ choco install ruby2.devkit
    
-   $ choco upgrade ruby2.devkit --y
+-  $ choco upgrade ruby2.devkit --y
 
-   $ refreshenv
+-  $ refreshenv
    
 
 •	After installing Ruby Dev kit go to cmd and check Ruby version using command
 
-  $ruby --version 
+- $ruby --version 
 
 •	Go to terminal and use command
 
-  $ridk.cmd install 1 2 3
+- $ridk.cmd install 1 2 3
 
 •	Ensure System Environment variables are updated in class path for Ruby
 
 •	Install Bundler which will manage all of Ruby dependencies using command in cmd
 
-$gem install bundler
+- $gem install bundler
 
 and at end use command in cmd  
 
-$gem install bundle
+- $gem install bundle
 
 •	An IDE which supports Ruby programming viz Ruby Mine IDE, Intellij IDE with Ruby Plugin Support, Visual Studio code with Ruby Plugins 
 
@@ -47,7 +48,7 @@ $gem install bundle
 Go to Terminal with root folder/Parent Directory
 Use command
 
-$ bundle install
+- $ bundle install
 
 This will download all the gems to run the automation.
 
@@ -68,7 +69,6 @@ Rspec is used for verification
 Cucumber used provides support for BDD test cases
 
 
-
 ## Contributing
 Contact for contributing to fixes and patches or enhancing the utility:                                                            	
 Abhijay Ghadyale – abhijay.ghadyale@citiustech.com 
@@ -79,15 +79,21 @@ For Executing Test cases in form of feature file use below Commands
 
 1)  to obtain cucumber html reports and exec test cases
 
-'bundle exec cucumber --format html --out html-report/testReport.html'
+- 'bundle exec cucumber --format html --out html-report/testReport.html'
 
-2)  to obtain cucumber html reports and Report builder html reports and exec test cases
+2)  to obtain cucumber json reports and Report builder html reports and exec test cases
 
-'bundle exec cucumber --format json --out json-report/testReport.json'
+- 'bundle exec cucumber --format json --out json-report/testReport.json'
 
 3) to only execute test cases (all)
 
-'bundle exec cucumber'
+- 'bundle exec cucumber'
+
+4) to execute a feature 
+ 
+- 'bundle exec cucumber -n "Feature file title" --format json --out json-report/testReport.json'
+ 
+This command will only execute feature and generate a cucumber json report and Report builder html report . 
 
 
 # Writing / Debugging the automation:
