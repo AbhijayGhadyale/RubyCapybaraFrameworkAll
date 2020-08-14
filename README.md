@@ -77,24 +77,31 @@ Abhijay Ghadyale – abhijay.ghadyale@citiustech.com
 # Running from the commandline
 For Executing Test cases in form of feature file use below Commands
 
-1)  to obtain cucumber html reports and exec test cases
+(1)  to obtain cucumber html reports and exec test cases
 
 - 'bundle exec cucumber --format html --out html-report/testReport.html'
 
-2)  to obtain cucumber json reports and Report builder html reports and exec test cases
+(2)  to obtain cucumber json reports and Report builder html reports and exec test cases
 
 - 'bundle exec cucumber --format json --out json-report/testReport.json'
 
-3) to only execute test cases (all)
+(3) to only execute test cases (all)
 
 - 'bundle exec cucumber'
 
-4) to execute a feature 
+(4) to execute a feature 
  
 - 'bundle exec cucumber -n "Feature file title" --format json --out json-report/testReport.json'
  
 This command will only execute feature and generate a cucumber json report and Report builder html report . 
 
+(5) create different config files in config folder e.g. for chrome headless mode create files as chromeheadless.config.yaml
+and when executing test cases pass its name 
+
+- bundle exec cucumber --format json --out json-report/testReport.json TEST_CONFIG='chromeheadless.config'
+
+so it will execute test cases/features in chromeheadless mode 
+similar way have config files for firefox , ie etc and pass its name when using command 
 
 # Writing / Debugging the automation:
 
