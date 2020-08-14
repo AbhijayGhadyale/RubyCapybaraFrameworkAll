@@ -45,7 +45,34 @@ module CommonCheckBoxControls
 
   end
 end
+
+
 =begin
+
+#select_check_box (locator, locator_type)
+method accept parameter as locator and its type e.g. input as locator having locator_type css
+and performs click operation
+
+
+#unselect_check_box_by_value(checkbox_value)
+method accepts any locator value and performs check
+
+
+##
+Interacting with forms
+Full reference: Capybara::Node::Actions
+
+There are a number of tools for interacting with form elements:
+
+fill_in('First Name', with: 'John')
+fill_in('Password', with: 'Seekrit')
+fill_in('Description', with: 'Really Long Text...')
+choose('A Radio Button')
 check('A Checkbox')
 uncheck('A Checkbox')
+attach_file('Image', '/path/to/image.jpg')
+select('Option', from: 'Select Box')
+
+
+ref:https://www.rubydoc.info/github/jnicklas/capybara
 =end

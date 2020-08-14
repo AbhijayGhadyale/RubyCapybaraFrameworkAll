@@ -47,8 +47,13 @@ module CommonExpectationControls
   end
 end
 
+=begin
+These are Rspec methods which are used to verify results
+like page have particular selector etc
+
 # expect(page).to have_selector('table tr')
 # expect(page).to have_selector(:xpath, './/table/tr')
 # expect(page).to have_xpath('.//table/tr')
 # expect(page).to have_css('table tr.foo')
 # expect(page).to have_content('foo')
+=end

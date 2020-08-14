@@ -27,4 +27,13 @@ end
 
 
 
+=begin
+# select_radio_button (locator, locator_type)
+# This method is used to select radio button where
 
+2 parameters are passed
+
+locator (value of xpath,value of css  ) ,
+locator_type (type of locator like css , xpath )
+
+=end

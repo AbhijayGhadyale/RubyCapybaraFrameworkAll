@@ -45,6 +45,13 @@ module CommonFindingControls
 
   end
 end
-=begin
 
+
+=begin
+get_value
+this returns value of locator passed as parameter
+
+
+verify_locator_text_available
+this used to find locator passed as argument is having text passed as parameter
 =end

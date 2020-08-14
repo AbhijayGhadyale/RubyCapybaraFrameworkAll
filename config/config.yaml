@@ -1,0 +1,8 @@
+test:
+  app_host: https://parabank.parasoft.com
+
+selenium:
+  browser: chrome     #chrome, firefox, ie ,chrome-headless, firefox-headless
+
+
+# Use above values to execute test cases in respective browsers

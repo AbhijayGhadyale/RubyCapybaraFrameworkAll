@@ -15,3 +15,10 @@ module CommonRadioButtonControls
   end
 
 end
+
+
+=begin
+In drivers which support it, you can easily execute JavaScript:
+
+page.execute_script("$('body').empty()")
+=end

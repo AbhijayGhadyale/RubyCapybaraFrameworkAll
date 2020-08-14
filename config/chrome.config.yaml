@@ -2,7 +2,6 @@ test:
   app_host: https://parabank.parasoft.com
 
 selenium:
-  browser: chrome     #chrome, firefox, ie ,chrome-headless, firefox-headless
+  browser: chrome
 
-
-# Use above values to execute test cases in respective browsers
+# this will execute all cucumber features in chrome browser

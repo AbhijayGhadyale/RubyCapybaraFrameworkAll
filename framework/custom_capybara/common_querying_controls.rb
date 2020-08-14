@@ -37,6 +37,9 @@ module CommonQueryingControls
 end
 
 =begin
+Capybara has a rich set of options for querying the page
+for the existence of certain elements, and working with and manipulating those elements.
+
 page.has_selector?('table tr')
 page.has_selector?(:xpath, './/table/tr')
 

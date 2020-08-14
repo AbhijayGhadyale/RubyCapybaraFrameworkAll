@@ -46,3 +46,12 @@ module CommonTextBoxControls
 
   end
 end
+
+
+=begin
+enter_text method enters text in specified locator
+
+
+clear_text methods removed entered text from specified locator
+
+=end

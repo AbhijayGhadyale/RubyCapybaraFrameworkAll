@@ -56,10 +56,22 @@ module CommonClickControls
 
   end
 end
+
+
+
 =begin
+
+Clicking links and buttons
+Full reference: Capybara::Node::Actions
+
+You can interact with the webapp by following links and buttons.
+Capybara automatically follows any redirects, and submits forms associated with buttons.
+
 click_link('id-of-link')
 click_link('Link Text')
 click_button('Save')
 click_on('Link Text') # clicks on either links or buttons
-click_on('Button Value')
+click_on('Button Value')=end
+
+#ref: https://www.rubydoc.info/github/jnicklas/capybara
 =end

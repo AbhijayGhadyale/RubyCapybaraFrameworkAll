@@ -17,6 +17,7 @@ module CommonNavigationControls
 end
 
 =begin
-check('A Checkbox')
-uncheck('A Checkbox')
+
+this method is used to navigate to particular path of url
+
 =end

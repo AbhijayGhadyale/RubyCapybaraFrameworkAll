@@ -25,5 +25,10 @@ module CommonFileUploadControls
   end
 end
 
+=begin
+# upload_file(locator, locator_type, path_of_file)
+# it accepts 3 parameters   locator (value of xpath,value of css  ) ,
+                           locator_type (type of locator like css , xpath ),
+                           path_of_file ( where file with name is available to upload)
 
-
+=end

@@ -25,7 +25,7 @@ module CommonDropdownControls
 
     def select_text_in_drop_down (_dropdown_value, dropdown_text)
       begin
-        select(dropdown_text, from: dropdown_element_value)
+        select(dropdown_text, from: _dropdown_value)
         $LOG.info "#{dropdown_text} is selected from #{_dropdown_value}"
       rescue Exception => e
         $LOG.error "error in selecting #{dropdown_text} from #{_dropdown_value}: #{e}"
@@ -36,4 +36,18 @@ module CommonDropdownControls
   end
 end
 
-# select('Option', from: 'Select Box')
+
+=begin
+below 2 methods provides way to select dropdown values
+
+1) select_text_from_dropdown (locator, locator_type, dropdown_text)
+Accepts 3 parameters locator (value of xpath,value of css  ) ,
+                     locator_type (type of locator like css , xpath ),
+                     dropdown_text ( text to be selected from dropdown)
+
+2) select_text_in_drop_down (_dropdown_value, dropdown_text)
+Accepts 2 parameters  _dropdown_value(value of dropdown i.e. css,xpath etc)
+                     dropdown_text ( text to be selected from dropdown)
+
+
+=end

@@ -36,3 +36,14 @@ class YamlOperations
 
   end
 end
+
+
+# load_yaml_file(file_path)
+# loads yaml file from file_path to access it
+
+# get_parent(parent_text)
+# to access particular parent from loded yaml file
+
+
+# get_child(parent_text, child_text)
+# to access child of parent from loded yaml file

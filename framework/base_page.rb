@@ -40,3 +40,4 @@ module UiTest
   end
 end
 
+# this class is including all custom capybara methods from respective classed
