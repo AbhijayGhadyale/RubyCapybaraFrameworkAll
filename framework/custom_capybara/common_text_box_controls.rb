@@ -52,6 +52,6 @@ end
 enter_text method enters text in specified locator
 
 
-clear_text methods removed entered text from specified locator
+clear_text method removed entered text from specified locator
 
 =end

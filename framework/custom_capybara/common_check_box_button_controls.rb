@@ -50,7 +50,7 @@ end
 =begin
 
 #select_check_box (locator, locator_type)
-method accept parameter as locator and its type e.g. input as locator having locator_type css
+method accepts parameter as locator and its type e.g. input as locator having locator_type css
 and performs click operation
 
 
