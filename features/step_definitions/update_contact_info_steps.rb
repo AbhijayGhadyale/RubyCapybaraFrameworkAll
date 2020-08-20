@@ -28,7 +28,7 @@ And(/^User have entered Phone number and city data as contact info$/) do
   dir_to_yaml = './testData/contact_info_test_data.yaml'
 
   YamlOperations.load_yaml_file dir_to_yaml
-  YamlOperations.get_parent'Customer101'
+  #YamlOperations.get_parent'Customer101'
   Yaml_Phone_Number=YamlOperations.get_child 'Customer101' ,'Phone Number'
   Yaml_City=YamlOperations.get_child 'Customer101','City'
 

@@ -1,85 +1,83 @@
-# Logfile created on 2020-08-14 12:24:16 +0530 by logger.rb/v1.4.2
-I, [2020-08-14T12:24:16.600685 #15476]  INFO -- : ############Test Cases Execution Started ################
-I, [2020-08-14T12:24:16.645683 #15476]  INFO -- : ==========######### Scenario Execution Started ##########===========
-I, [2020-08-14T12:24:33.194680 #15476]  INFO -- : navigating to url is successfull 
-I, [2020-08-14T12:24:33.210681 #15476]  INFO -- : Excel is created in buffer
-I, [2020-08-14T12:24:33.210681 #15476]  INFO -- : Login is added in excel in buffer
-I, [2020-08-14T12:24:33.210681 #15476]  INFO -- : Login is selected in excel
-I, [2020-08-14T12:24:33.211684 #15476]  INFO -- : john is entered in selected sheet of excel
-I, [2020-08-14T12:24:33.212682 #15476]  INFO -- : demo is entered in selected sheet of excel
-I, [2020-08-14T12:24:33.224682 #15476]  INFO -- : Excel in buffer saved as ./testData/excelTest.xlsx
-I, [2020-08-14T12:24:33.244682 #15476]  INFO -- : ./testData/excelTest.xlsx  excel is opened 
-I, [2020-08-14T12:24:33.244682 #15476]  INFO -- : Login is selected in excel
-I, [2020-08-14T12:24:33.336681 #15476]  INFO -- : john entered in input[name='username']
-I, [2020-08-14T12:24:33.413680 #15476]  INFO -- : demo entered in input[name='password']
-I, [2020-08-14T12:24:33.413680 #15476]  INFO -- : Pass is entered in selected sheet of excel
-I, [2020-08-14T12:24:33.424683 #15476]  INFO -- : Excel in buffer saved as ./testData/excelTest.xlsx
-I, [2020-08-14T12:24:41.169679 #15476]  INFO -- : input[value="Log In"] is clicked
-E, [2020-08-14T12:24:46.189712 #15476] ERROR -- : 'The username and password could not be verified.' text is not available for p[class="error"]: Unable to find css "p[class=\"error\"]"
-I, [2020-08-14T12:24:46.189712 #15476]  INFO -- : ==========######### Scenario Execution Completed ##########===========
-I, [2020-08-14T12:24:52.709685 #15476]  INFO -- : ==========######### Scenario Execution Started ##########===========
-I, [2020-08-14T12:24:55.474682 #15476]  INFO -- : navigating to url is successfull 
-I, [2020-08-14T12:24:55.563713 #15476]  INFO -- : john entered in input[name='username']
-I, [2020-08-14T12:24:55.643684 #15476]  INFO -- : demo entered in input[name='password']
-I, [2020-08-14T12:24:56.715717 #15476]  INFO -- : input[value="Log In"] is clicked
-I, [2020-08-14T12:24:56.727710 #15476]  INFO -- : verified as page is having ParaBank | Accounts Overview as title 
-I, [2020-08-14T12:24:56.727710 #15476]  INFO -- : ==========######### Scenario Execution Completed ##########===========
-I, [2020-08-14T12:24:57.212683 #15476]  INFO -- : ==========######### Scenario Execution Started ##########===========
-I, [2020-08-14T12:25:06.551680 #15476]  INFO -- : navigating to url is successfull 
-I, [2020-08-14T12:25:06.642682 #15476]  INFO -- : admin entered in input[name='username']
-I, [2020-08-14T12:25:06.720680 #15476]  INFO -- : admin entered in input[name='password']
-I, [2020-08-14T12:25:12.166690 #15476]  INFO -- : input[value="Log In"] is clicked
-I, [2020-08-14T12:25:12.211711 #15476]  INFO -- : 'Error!' text is available for h1
-I, [2020-08-14T12:25:12.211711 #15476]  INFO -- : ==========######### Scenario Execution Completed ##########===========
-I, [2020-08-14T12:25:12.436682 #15476]  INFO -- : ==========######### Scenario Execution Started ##########===========
-I, [2020-08-14T12:25:20.380712 #15476]  INFO -- : navigating to url is successfull 
-I, [2020-08-14T12:25:20.469713 #15476]  INFO -- : john entered in input[name='username']
-I, [2020-08-14T12:25:20.548680 #15476]  INFO -- : demo entered in input[name='password']
-I, [2020-08-14T12:25:27.447682 #15476]  INFO -- : input[value="Log In"] is clicked
-I, [2020-08-14T12:25:27.504711 #15476]  INFO -- : 'Accounts Overview' text is available for h1
-I, [2020-08-14T12:25:27.504711 #15476]  INFO -- : ==========######### Scenario Execution Completed ##########===========
-I, [2020-08-14T12:25:27.802680 #15476]  INFO -- : ==========######### Scenario Execution Started ##########===========
-I, [2020-08-14T12:25:30.606712 #15476]  INFO -- : navigating to url is successfull 
-I, [2020-08-14T12:25:30.697712 #15476]  INFO -- : demo entered in input[name='username']
-I, [2020-08-14T12:25:30.775715 #15476]  INFO -- : demo entered in input[name='password']
-I, [2020-08-14T12:25:31.947714 #15476]  INFO -- : input[value="Log In"] is clicked
-I, [2020-08-14T12:25:31.992713 #15476]  INFO -- : 'Error!' text is available for h1
-I, [2020-08-14T12:25:31.992713 #15476]  INFO -- : ==========######### Scenario Execution Completed ##########===========
-I, [2020-08-14T12:25:32.171680 #15476]  INFO -- : ==========######### Scenario Execution Started ##########===========
-I, [2020-08-14T12:25:35.026717 #15476]  INFO -- : navigating to url is successfull 
-I, [2020-08-14T12:25:35.142689 #15476]  INFO -- : john entered in input[name='username']
-I, [2020-08-14T12:25:35.222705 #15476]  INFO -- : demo entered in input[name='password']
-I, [2020-08-14T12:25:36.477685 #15476]  INFO -- : input[value="Log In"] is clicked
-I, [2020-08-14T12:25:36.489681 #15476]  INFO -- : verified as page is having ParaBank | Accounts Overview as title 
-I, [2020-08-14T12:25:37.404682 #15476]  INFO -- : ==========######### Scenario Execution Completed ##########===========
-I, [2020-08-14T12:25:37.614680 #15476]  INFO -- : ==========######### Scenario Execution Started ##########===========
-I, [2020-08-14T12:25:45.324688 #15476]  INFO -- : navigating to url is successfull 
-I, [2020-08-14T12:25:45.413718 #15476]  INFO -- : john entered in input[name='username']
-I, [2020-08-14T12:25:45.491712 #15476]  INFO -- : demo entered in input[name='password']
-I, [2020-08-14T12:25:47.098681 #15476]  INFO -- : input[value="Log In"] is clicked
-I, [2020-08-14T12:25:47.109711 #15476]  INFO -- : verified as page is having ParaBank | Accounts Overview as title 
-I, [2020-08-14T12:25:48.016680 #15476]  INFO -- : a[href="/parabank/updateprofile.htm"] is clicked
-I, [2020-08-14T12:25:48.027684 #15476]  INFO -- : verified as page is having ParaBank | Update Profile as title 
-I, [2020-08-14T12:25:48.120680 #15476]  INFO -- : 310-447-4123 entered in input[name='customer.phoneNumber']
-I, [2020-08-14T12:25:48.197696 #15476]  INFO -- : Mum entered in input[name='customer.address.city']
-I, [2020-08-14T12:25:48.264682 #15476]  INFO -- : input[value="Update Profile"] is clicked
-E, [2020-08-14T12:25:53.276680 #15476] ERROR -- : 'Profile Updated' text is not available for h1[class="title"]: Unable to find visible css "h1[class=\"title\"]" with text "Profile Updated"
-I, [2020-08-14T12:25:53.277680 #15476]  INFO -- : ==========######### Scenario Execution Completed ##########===========
-I, [2020-08-14T12:25:53.875683 #15476]  INFO -- : ==========######### Scenario Execution Started ##########===========
-I, [2020-08-14T12:25:56.536713 #15476]  INFO -- : navigating to url is successfull 
-I, [2020-08-14T12:25:56.628713 #15476]  INFO -- : john entered in input[name='username']
-I, [2020-08-14T12:25:56.707711 #15476]  INFO -- : demo entered in input[name='password']
-I, [2020-08-14T12:25:58.229680 #15476]  INFO -- : input[value="Log In"] is clicked
-I, [2020-08-14T12:25:58.240695 #15476]  INFO -- : verified as page is having ParaBank | Accounts Overview as title 
-I, [2020-08-14T12:25:58.702713 #15476]  INFO -- : a[href="/parabank/updateprofile.htm"] is clicked
-I, [2020-08-14T12:25:58.713684 #15476]  INFO -- : verified as page is having ParaBank | Update Profile as title 
-I, [2020-08-14T12:25:58.714713 #15476]  INFO -- : ./testData/contact_info_test_data.yaml is loaded successfully
-I, [2020-08-14T12:25:58.714713 #15476]  INFO -- : Customer101 is accessed
-I, [2020-08-14T12:25:58.715681 #15476]  INFO -- : Phone Number of Customer101 is accessed
-I, [2020-08-14T12:25:58.715681 #15476]  INFO -- : City of Customer101 is accessed
-I, [2020-08-14T12:25:58.803680 #15476]  INFO -- : true entered in input[name='customer.phoneNumber']
-I, [2020-08-14T12:25:58.881681 #15476]  INFO -- : true entered in input[name='customer.address.city']
-I, [2020-08-14T12:25:58.940683 #15476]  INFO -- : input[value="Update Profile"] is clicked
-E, [2020-08-14T12:26:03.955713 #15476] ERROR -- : 'Profile Updated' text is not available for h1[class="title"]: Unable to find visible css "h1[class=\"title\"]" with text "Profile Updated"
-I, [2020-08-14T12:26:03.956682 #15476]  INFO -- : ==========######### Scenario Execution Completed ##########===========
-I, [2020-08-14T12:26:04.890682 #15476]  INFO -- : ############Test Cases Execution Completed ################
+# Logfile created on 2020-08-20 14:19:57 +0530 by logger.rb/v1.4.2
+I, [2020-08-20T14:19:57.691036 #776]  INFO -- : ############Test Cases Execution Started ################
+I, [2020-08-20T14:19:57.731066 #776]  INFO -- : ==========######### Scenario Execution Started ##########===========
+I, [2020-08-20T14:20:29.434822 #776]  INFO -- : navigating to url is successfull 
+I, [2020-08-20T14:20:29.491332 #776]  INFO -- : Excel is created in buffer
+I, [2020-08-20T14:20:29.492330 #776]  INFO -- : Login is added in excel in buffer
+I, [2020-08-20T14:20:29.492330 #776]  INFO -- : Login is selected in excel
+I, [2020-08-20T14:20:29.493360 #776]  INFO -- : john is entered in selected sheet of excel
+I, [2020-08-20T14:20:29.493360 #776]  INFO -- : demo is entered in selected sheet of excel
+I, [2020-08-20T14:20:29.566497 #776]  INFO -- : Excel in buffer saved as ./testData/excelTest.xlsx
+I, [2020-08-20T14:20:29.587500 #776]  INFO -- : ./testData/excelTest.xlsx  excel is opened 
+I, [2020-08-20T14:20:29.587500 #776]  INFO -- : Login is selected in excel
+I, [2020-08-20T14:20:29.679525 #776]  INFO -- : john entered in input[name='username']
+I, [2020-08-20T14:20:29.758524 #776]  INFO -- : demo entered in input[name='password']
+I, [2020-08-20T14:20:29.758524 #776]  INFO -- : Pass is entered in selected sheet of excel
+I, [2020-08-20T14:20:29.769523 #776]  INFO -- : Excel in buffer saved as ./testData/excelTest.xlsx
+I, [2020-08-20T14:20:32.443543 #776]  INFO -- : input[value="Log In"] is clicked
+E, [2020-08-20T14:20:37.453931 #776] ERROR -- : 'The username and password could not be verified.' text is not available for p[class="error"]: Unable to find css "p[class=\"error\"]"
+I, [2020-08-20T14:20:37.454855 #776]  INFO -- : ==========######### Scenario Execution Completed ##########===========
+I, [2020-08-20T14:20:38.046446 #776]  INFO -- : ==========######### Scenario Execution Started ##########===========
+I, [2020-08-20T14:20:41.651526 #776]  INFO -- : navigating to url is successfull 
+I, [2020-08-20T14:20:41.740737 #776]  INFO -- : john entered in input[name='username']
+I, [2020-08-20T14:20:41.819750 #776]  INFO -- : demo entered in input[name='password']
+I, [2020-08-20T14:20:42.689814 #776]  INFO -- : input[value="Log In"] is clicked
+I, [2020-08-20T14:20:42.702815 #776]  INFO -- : verified as page is having ParaBank | Accounts Overview as title 
+I, [2020-08-20T14:20:42.702815 #776]  INFO -- : ==========######### Scenario Execution Completed ##########===========
+I, [2020-08-20T14:20:42.966648 #776]  INFO -- : ==========######### Scenario Execution Started ##########===========
+I, [2020-08-20T14:20:46.861646 #776]  INFO -- : navigating to url is successfull 
+I, [2020-08-20T14:20:46.950448 #776]  INFO -- : admin entered in input[name='username']
+I, [2020-08-20T14:20:47.028495 #776]  INFO -- : admin entered in input[name='password']
+I, [2020-08-20T14:20:47.891063 #776]  INFO -- : input[value="Log In"] is clicked
+I, [2020-08-20T14:20:47.937095 #776]  INFO -- : 'Error!' text is available for h1
+I, [2020-08-20T14:20:47.938096 #776]  INFO -- : ==========######### Scenario Execution Completed ##########===========
+I, [2020-08-20T14:20:48.198103 #776]  INFO -- : ==========######### Scenario Execution Started ##########===========
+I, [2020-08-20T14:20:52.770669 #776]  INFO -- : navigating to url is successfull 
+I, [2020-08-20T14:20:52.861905 #776]  INFO -- : john entered in input[name='username']
+I, [2020-08-20T14:20:52.941816 #776]  INFO -- : demo entered in input[name='password']
+I, [2020-08-20T14:20:54.268646 #776]  INFO -- : input[value="Log In"] is clicked
+I, [2020-08-20T14:20:54.303677 #776]  INFO -- : 'Accounts Overview' text is available for h1
+I, [2020-08-20T14:20:54.303677 #776]  INFO -- : ==========######### Scenario Execution Completed ##########===========
+I, [2020-08-20T14:20:54.546676 #776]  INFO -- : ==========######### Scenario Execution Started ##########===========
+I, [2020-08-20T14:20:56.763862 #776]  INFO -- : navigating to url is successfull 
+I, [2020-08-20T14:20:56.852088 #776]  INFO -- : demo entered in input[name='username']
+I, [2020-08-20T14:20:56.931021 #776]  INFO -- : demo entered in input[name='password']
+I, [2020-08-20T14:20:58.069610 #776]  INFO -- : input[value="Log In"] is clicked
+I, [2020-08-20T14:20:58.118723 #776]  INFO -- : 'Error!' text is available for h1
+I, [2020-08-20T14:20:58.118723 #776]  INFO -- : ==========######### Scenario Execution Completed ##########===========
+I, [2020-08-20T14:20:58.403754 #776]  INFO -- : ==========######### Scenario Execution Started ##########===========
+I, [2020-08-20T14:21:01.583401 #776]  INFO -- : navigating to url is successfull 
+I, [2020-08-20T14:21:01.674552 #776]  INFO -- : john entered in input[name='username']
+I, [2020-08-20T14:21:01.753539 #776]  INFO -- : demo entered in input[name='password']
+I, [2020-08-20T14:21:03.515717 #776]  INFO -- : input[value="Log In"] is clicked
+I, [2020-08-20T14:21:03.527714 #776]  INFO -- : verified as page is having ParaBank | Accounts Overview as title 
+I, [2020-08-20T14:21:04.019031 #776]  INFO -- : ==========######### Scenario Execution Completed ##########===========
+I, [2020-08-20T14:21:04.333088 #776]  INFO -- : ==========######### Scenario Execution Started ##########===========
+I, [2020-08-20T14:21:07.867641 #776]  INFO -- : navigating to url is successfull 
+I, [2020-08-20T14:21:07.958074 #776]  INFO -- : john entered in input[name='username']
+I, [2020-08-20T14:21:08.038055 #776]  INFO -- : demo entered in input[name='password']
+I, [2020-08-20T14:21:08.916634 #776]  INFO -- : input[value="Log In"] is clicked
+I, [2020-08-20T14:21:08.928654 #776]  INFO -- : verified as page is having ParaBank | Accounts Overview as title 
+I, [2020-08-20T14:21:09.429445 #776]  INFO -- : a[href="/parabank/updateprofile.htm"] is clicked
+I, [2020-08-20T14:21:09.441446 #776]  INFO -- : verified as page is having ParaBank | Update Profile as title 
+I, [2020-08-20T14:21:09.533447 #776]  INFO -- : 310-447-4123 entered in input[name='customer.phoneNumber']
+I, [2020-08-20T14:21:09.610447 #776]  INFO -- : Mum entered in input[name='customer.address.city']
+I, [2020-08-20T14:21:09.677454 #776]  INFO -- : input[value="Update Profile"] is clicked
+E, [2020-08-20T14:21:14.699072 #776] ERROR -- : 'Profile Updated' text is not available for h1[class="title"]: Unable to find visible css "h1[class=\"title\"]" with text "Profile Updated"
+I, [2020-08-20T14:21:14.699072 #776]  INFO -- : ==========######### Scenario Execution Completed ##########===========
+I, [2020-08-20T14:21:15.399663 #776]  INFO -- : ==========######### Scenario Execution Started ##########===========
+I, [2020-08-20T14:21:19.341350 #776]  INFO -- : navigating to url is successfull 
+I, [2020-08-20T14:21:19.436349 #776]  INFO -- : john entered in input[name='username']
+I, [2020-08-20T14:21:19.514351 #776]  INFO -- : demo entered in input[name='password']
+I, [2020-08-20T14:21:20.427867 #776]  INFO -- : input[value="Log In"] is clicked
+I, [2020-08-20T14:21:20.440780 #776]  INFO -- : verified as page is having ParaBank | Accounts Overview as title 
+I, [2020-08-20T14:21:21.380094 #776]  INFO -- : a[href="/parabank/updateprofile.htm"] is clicked
+I, [2020-08-20T14:21:21.392122 #776]  INFO -- : verified as page is having ParaBank | Update Profile as title 
+I, [2020-08-20T14:21:21.393124 #776]  INFO -- : ./testData/contact_info_test_data.yaml is loaded successfully
+I, [2020-08-20T14:21:21.484166 #776]  INFO -- : 310-447-4121 entered in input[name='customer.phoneNumber']
+I, [2020-08-20T14:21:21.574122 #776]  INFO -- : Beverly Hills entered in input[name='customer.address.city']
+I, [2020-08-20T14:21:21.641123 #776]  INFO -- : input[value="Update Profile"] is clicked
+E, [2020-08-20T14:21:26.682853 #776] ERROR -- : 'Profile Updated' text is not available for h1[class="title"]: Unable to find visible css "h1[class=\"title\"]" with text "Profile Updated"
+I, [2020-08-20T14:21:26.683824 #776]  INFO -- : ==========######### Scenario Execution Completed ##########===========
+I, [2020-08-20T14:21:27.857646 #776]  INFO -- : ./config/config.yaml is loaded successfully
+I, [2020-08-20T14:21:27.981646 #776]  INFO -- : ############Test Cases Execution Completed ################

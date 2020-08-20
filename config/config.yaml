@@ -3,6 +3,7 @@ test:
 
 selenium:
   browser: chrome     #chrome, firefox, ie ,chrome-headless, firefox-headless
-
+  environment: UAT
+  report_builder_report_title: Para Bank Test Results
 
 # Use above values to execute test cases in respective browsers
